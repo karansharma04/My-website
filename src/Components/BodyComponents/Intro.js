@@ -13,7 +13,7 @@ export default function Intro() {
                 <div className="pb-6 text-zinc-450 leading-7">I'm a final year B.Tech undergrad pursuing <span className=" text-sky-600">Computer Science and Engineering</span> from IIT Guwahati.
                     I'm naturally inclined towards problem solving and am interested in CS fundamentals, web development with special focus on UI/UX, and competitive programming.</div>
             </div>
-            <div className="flex pb-20">
+            <div className="flex">
                 <div><a href="https://www.linkedin.com/in/karansharma04/">
                     <FaLinkedinIn className="transition-all hover:scale-105 hover:-translate-y-0.5" size="2em" color="white" />
                 </a></div>
