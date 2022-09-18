@@ -23,7 +23,7 @@ export default function Experience(props) {
                 </div>
                 <div className="flex py-2 gap-2">
                     <div className="text-zinc-200">techStackUsed:</div>
-                    <div>React, TypeScript, Node.js, Go, Cypress</div>
+                    <div>React, TypeScript, Cypress, Go</div>
 
                 </div>
             </div>

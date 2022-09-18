@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --spead: 500ms;
+}
+
+.dropdown-inpage-enter{
+    padding: 0px;
+    padding-left: 24px;
+    transform: translateY(-100%);
+}
+
+.dropdown-inpage-enter-active{
+    padding-top:16px;
+    padding-bottom:16px;
+    padding-left: 24px;
+    transform: translateY(0%);
+    transition: all 0.3s linear;
+}
+
+.dropdown-inpage-enter-done{
+    padding-top:16px;
+    padding-bottom:16px;
+    padding-left: 24px;
+    transform: translateY(0%);
+}
+.dropdown-inpage-exit{
+    padding-top:16px;
+    padding-bottom:16px;
+    padding-left: 24px;
+    transform: translateY(0%);
+}
+.dropdown-inpage-exit-active{
+    padding: 0px;
+    padding-left: 24px;
+    transform: translateY(-100%);
+    transition: all 0.3s linear;
+}

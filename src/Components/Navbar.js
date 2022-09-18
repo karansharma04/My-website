@@ -42,7 +42,7 @@ export default function NavBar(props) {
                 <NavElement onClick={AchievementsHandler}>achievements</NavElement>
                 <NavElement onClick={CpHandler}>competitiveProgramming</NavElement>
                 <NavElement className="underline underline-offset-2">
-                    <a href={karanResume} without rel="noopener noreferrer" target="_blank">resume</a>
+                    <a href={karanResume} rel="noopener noreferrer" target="_blank">resume</a>
                 </NavElement>
             </div>
         </div>
