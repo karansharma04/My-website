@@ -1,9 +1,7 @@
 import Title from "../Title";
 import { BsPlusLg } from "react-icons/bs";
 import { useState, useCallback, useRef } from "react";
-import { CSSTransition } from "react-transition-group";
 import "../../App.css";
-import clsx from "clsx";
 
 export default function Projects(props) {
   const [showInterviewTrackerContent, setShowInterviewTrackerContent] =
