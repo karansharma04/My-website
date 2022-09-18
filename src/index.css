@@ -2,38 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --spead: 500ms;
     --icon-classname: transition-all ease-linear hover:scale-125 hover:-translate-y-1;
 }
 
-.dropdown-inpage-enter{
+.dropdown-inpage-enter {
     padding: 0px;
     padding-left: 24px;
     transform: translateY(-100%);
 }
 
-.dropdown-inpage-enter-active{
-    padding-top:16px;
-    padding-bottom:16px;
+.dropdown-inpage-enter-active {
+    padding-top: 16px;
+    padding-bottom: 16px;
     padding-left: 24px;
     transform: translateY(0%);
     transition: all 0.3s linear;
 }
 
-.dropdown-inpage-enter-done{
-    padding-top:16px;
-    padding-bottom:16px;
+.dropdown-inpage-enter-done {
+    padding-top: 16px;
+    padding-bottom: 16px;
     padding-left: 24px;
     transform: translateY(0%);
 }
-.dropdown-inpage-exit{
-    padding-top:16px;
-    padding-bottom:16px;
+
+.dropdown-inpage-exit {
+    padding-top: 16px;
+    padding-bottom: 16px;
     padding-left: 24px;
     transform: translateY(0%);
 }
-.dropdown-inpage-exit-active{
+
+.dropdown-inpage-exit-active {
     padding: 0px;
     padding-left: 24px;
     transform: translateY(-100%);
@@ -41,37 +50,78 @@
 }
 
 
-.up-arrow-enter{
-    left: 32px;
-    top: 0px;
+.up-arrow-enter {
+    right: 32px;
+    bottom: 0px;
     color: black;
     background-color: transparent;
 }
 
-.up-arrow-enter-active{
-    left: 32px;
-    top: 64px;
+.up-arrow-enter-active {
+    right: 32px;
+    bottom: 32px;
     color: white;
-    background-color: black ;
+    background-color: black;
     transition: all 0.4s linear;
 }
 
-.up-arrow-enter-done{
-    left: 32px;
-    top: 64px;
+.up-arrow-enter-done {
+    right: 32px;
+    bottom: 32px;
     color: white;
-    background-color: black ;
+    background-color: black;
 }
-.up-arrow-exit{
-    left: 32px;
-    top: 64px;
+
+.up-arrow-exit {
+    right: 32px;
+    bottom: 32px;
     color: white;
-    background-color: black ;
+    background-color: black;
 }
-.up-arrow-exit-active{
-    left: 32px;
-    top: 0px;
+
+.up-arrow-exit-active {
+    right: 32px;
+    bottom: 0px;
     color: black;
     background-color: transparent;
     transition: all 0.4s linear;
+}
+
+@media screen and (max-width: 1000px) {
+    .up-arrow-enter {
+        right: 32px;
+        bottom: 0px;
+        color: black;
+        background-color: transparent;
+    }
+    
+    .up-arrow-enter-active {
+        right: 32px;
+        bottom: 32px;
+        color: white;
+        background-color: black;
+        transition: all 0.4s linear;
+    }
+    
+    .up-arrow-enter-done {
+        right: 32px;
+        bottom: 32px;
+        color: white;
+        background-color: black;
+    }
+    
+    .up-arrow-exit {
+        right: 32px;
+        bottom: 32px;
+        color: white;
+        background-color: black;
+    }
+    
+    .up-arrow-exit-active {
+        right: 32px;
+        bottom: 0px;
+        color: black;
+        background-color: transparent;
+        transition: all 0.4s linear;
+    }
 }

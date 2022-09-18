@@ -8,11 +8,11 @@ export default function Experience(props) {
                 <div className="text-zinc-200 text-lg pb-4">
                     Summer Internship at DevRev (May 2022 - July 2022)
                 </div>
-                <div className="flex py-2 gap-2">
+                <div className="flex py-2 gap-2  flex-col sm:flex-row">
                     <div className="text-zinc-200">title:</div>
                     <div>Member of Technical Staff Intern</div>
                 </div>
-                <div className="flex py-2 gap-2">
+                <div className="flex py-2 gap-2  flex-col sm:flex-row">
                     <div className="text-zinc-200">workDone:</div>
                     <div>
                         <div> - Developed and deployed an end-to-end video call feature in app, using React.js for frontend and Golang for
@@ -21,7 +21,7 @@ export default function Experience(props) {
                     </div>
 
                 </div>
-                <div className="flex py-2 gap-2">
+                <div className="flex py-2 gap-2  flex-col sm:flex-row">
                     <div className="text-zinc-200">techStackUsed:</div>
                     <div>React, TypeScript, Cypress, Go</div>
 

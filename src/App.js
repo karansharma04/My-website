@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="bg-slate-900">
-      <div className="font-ibmMono flex-col">
+      <div className="font-ibmMono flex-col  text-center sm:text-left">
       <NavBar
         aboutMeRef={aboutMeRef}
         educationRef={educationRef}

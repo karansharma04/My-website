@@ -4,6 +4,7 @@ import karanResume from "../karanresume.pdf";
 import { useState, useEffect, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import { BsArrowUp } from "react-icons/bs";
+import NavIcon from "./NavbarComponents/NavIcon";
 
 export default function NavBar(props) {
   const AboutMeHandler = useCallback(() => {
@@ -37,6 +38,28 @@ export default function NavBar(props) {
     return () => (window.onscroll = null);
   });
 
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
+
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    console.log(windowSize.innerWidth);
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, [windowSize.innerWidth]);
+
+  const [showSideMenu, setShowSideMenu] = useState(false);
+
   return (
     <div className="fixed top-0 left-0 text-black w-full">
       <CSSTransition
@@ -65,19 +88,25 @@ export default function NavBar(props) {
           />
         </div>
       </CSSTransition>
-      <div className="flex justify-end bg-black text-[#B9B9B9] font-ibmMono">
-        <NavElement onClick={AboutMeHandler}>aboutMe</NavElement>
-        <NavElement onClick={EducationHandler}>education</NavElement>
-        <NavElement onClick={ExperienceHandler}>experience</NavElement>
-        <NavElement onClick={ProjectsHandler}>projects</NavElement>
-        <NavElement onClick={AchievementsHandler}>achievements</NavElement>
-        <NavElement onClick={CpHandler}>competitiveProgramming</NavElement>
-        <NavElement className="underline underline-offset-2">
-          <a href={karanResume} rel="noopener noreferrer" target="_blank">
-            resume
-          </a>
-        </NavElement>
-      </div>
+      {windowSize.innerWidth > 1000 ? (
+        <div className="flex justify-end bg-black text-[#B9B9B9] font-ibmMono">
+          <NavElement onClick={AboutMeHandler}>aboutMe</NavElement>
+          <NavElement onClick={EducationHandler}>education</NavElement>
+          <NavElement onClick={ExperienceHandler}>experience</NavElement>
+          <NavElement onClick={ProjectsHandler}>projects</NavElement>
+          <NavElement onClick={AchievementsHandler}>achievements</NavElement>
+          <NavElement onClick={CpHandler}>competitiveProgramming</NavElement>
+          <NavElement className="underline underline-offset-2">
+            <a href={karanResume} rel="noopener noreferrer" target="_blank">
+              resume
+            </a>
+          </NavElement>
+        </div>
+      ) : (
+        <div onClick={()=>setShowSideMenu(!showSideMenu)} className="flex justify-end bg-black text-[#B9B9B9]font-ibmMono">
+          <NavIcon close={showSideMenu} />
+        </div>
+      )}
     </div>
   );
 }
