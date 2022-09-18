@@ -15,10 +15,10 @@ export default function Intro() {
             </div>
             <div className="flex px-4">
                 <div><a href="https://www.linkedin.com/in/karansharma04/">
-                    <FaLinkedinIn className="transition-all hover:scale-125 hover:-translate-y-1" size="2em" color="white" />
+                    <FaLinkedinIn className="transition-all hover:scale-125 hover:text-yellow-100 text-white hover:-translate-y-1" size="2em" />
                 </a></div>
                 <div className="px-4"><a href="https://www.github.com/karansharma04/">
-                    <FaGithub className="transition-all hover:scale-125 hover:-translate-y-1" size="2em" color="white" />
+                    <FaGithub className="transition-all hover:scale-125 hover:text-yellow-100 text-white hover:-translate-y-1" size="2em" />
                 </a></div>
             </div>
         </div>

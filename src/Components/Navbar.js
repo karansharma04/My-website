@@ -60,7 +60,7 @@ export default function NavBar(props) {
           }
         >
           <BsArrowUp
-            className="transition-all hover:scale-125 hover:-translate-y-1"
+            className="transition-all hover:scale-125  hover:text-yellow-100 text-white hover:-translate-y-1"
             size="3em"
           />
         </div>
