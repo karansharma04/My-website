@@ -7,9 +7,9 @@ export default function Intro() {
             <div><span className="bg-black">Hi all,</span></div>
             <div><span className="bg-black">I am</span></div>
             <div>
-                <div className="py-6 text-6xl text-zinc-200">Karan Sharma,</div>
-                <div className="text-4xl pb-4 text-zinc-350">IIT Guwahati Undergrad,</div>
-                <div className="text-4xl pb-6 text-zinc-350">Developer and Competitive Programmer</div>
+                <div className="py-6 text-4xl md:text-5xl lg:text-6xl text-zinc-200">Karan Sharma,</div>
+                <div className="text-2xl md:text-3xl lg:text-4xl pb-4 text-zinc-350">IIT Guwahati Undergrad,</div>
+                <div className="text-2xl md:text-3xl lg:text-4xl pb-6 text-zinc-350">Developer and Competitive Programmer</div>
                 <div className="pb-8 text-zinc-450 leading-7">I'm a final year B.Tech undergrad pursuing <span className=" text-sky-600">Computer Science and Engineering</span> from IIT Guwahati.
                     I'm naturally inclined towards problem solving and am interested in CS fundamentals, web development with special focus on UI/UX, and competitive programming.</div>
             </div>

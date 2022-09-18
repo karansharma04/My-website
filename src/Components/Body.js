@@ -8,7 +8,7 @@ import Achievements from "./BodyComponents/Achievements"
 
 export default function Body(props) {
     return (
-        <div className="w-full flex-col justify-start pt-40 px-32 bg-slate-900 text-[#B9B9B9]">
+        <div className="w-full flex-col justify-start pt-40 px-4 md:px-32 text-[#B9B9B9]">
             <Intro />
             <AboutMe aboutMeRef={props.aboutMeRef} />
             <Education educationRef={props.educationRef} />

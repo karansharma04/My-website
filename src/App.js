@@ -12,7 +12,8 @@ function App() {
   const cpRef = useRef(null);
 
   return (
-    <div className="font-ibmMono">
+    <div className="bg-slate-900">
+      <div className="font-ibmMono flex-col">
       <NavBar
         aboutMeRef={aboutMeRef}
         educationRef={educationRef}
@@ -30,6 +31,7 @@ function App() {
         cpRef={cpRef}
       />
       <Footer />
+    </div> 
     </div>
   );
 }
