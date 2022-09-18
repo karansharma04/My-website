@@ -3,7 +3,7 @@ import Title from "../Title"
 
 export default function Education(props) {
     return (
-        <div ref={props.educationRef} className="flex flex-col gap-10">
+        <div ref={props.educationRef} className="flex flex-col gap-10 pb-32">
             <Title>education</Title>
             <div className="flex">
                 <div className="text-white px-2">degree:</div>

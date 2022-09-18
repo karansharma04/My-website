@@ -4,6 +4,7 @@
 
 :root {
     --spead: 500ms;
+    --icon-classname: transition-all ease-linear hover:scale-125 hover:-translate-y-1;
 }
 
 .dropdown-inpage-enter{
@@ -36,5 +37,41 @@
     padding: 0px;
     padding-left: 24px;
     transform: translateY(-100%);
-    transition: all 0.3s linear;
+    transition: all 0.3s ease;
+}
+
+
+.up-arrow-enter{
+    left: 32px;
+    top: 0px;
+    color: black;
+    background-color: transparent;
+}
+
+.up-arrow-enter-active{
+    left: 32px;
+    top: 64px;
+    color: white;
+    background-color: black ;
+    transition: all 0.4s linear;
+}
+
+.up-arrow-enter-done{
+    left: 32px;
+    top: 64px;
+    color: white;
+    background-color: black ;
+}
+.up-arrow-exit{
+    left: 32px;
+    top: 64px;
+    color: white;
+    background-color: black ;
+}
+.up-arrow-exit-active{
+    left: 32px;
+    top: 0px;
+    color: black;
+    background-color: transparent;
+    transition: all 0.4s linear;
 }

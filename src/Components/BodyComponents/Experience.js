@@ -2,7 +2,7 @@ import Title from "../Title"
 
 export default function Experience(props) {
     return (
-        <div ref={props.experienceRef} className="flex flex-col gap-10">
+        <div ref={props.experienceRef} className="flex flex-col gap-10 pb-32">
             <Title>experience</Title>
             <div>
                 <div className="text-zinc-200 text-lg pb-4">

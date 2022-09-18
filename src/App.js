@@ -13,8 +13,22 @@ function App() {
 
   return (
     <div className="font-ibmMono">
-      <NavBar aboutMeRef={aboutMeRef} educationRef={educationRef} experienceRef={experienceRef} projectsRef={projectsRef} achievementsRef={achievementsRef} cpRef={cpRef}/>
-      <Body aboutMeRef={aboutMeRef} educationRef={educationRef} experienceRef={experienceRef} projectsRef={projectsRef} achievementsRef={achievementsRef} cpRef={cpRef}/>
+      <NavBar
+        aboutMeRef={aboutMeRef}
+        educationRef={educationRef}
+        experienceRef={experienceRef}
+        projectsRef={projectsRef}
+        achievementsRef={achievementsRef}
+        cpRef={cpRef}
+      />
+      <Body
+        aboutMeRef={aboutMeRef}
+        educationRef={educationRef}
+        experienceRef={experienceRef}
+        projectsRef={projectsRef}
+        achievementsRef={achievementsRef}
+        cpRef={cpRef}
+      />
       <Footer />
     </div>
   );

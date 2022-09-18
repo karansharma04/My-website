@@ -3,7 +3,7 @@ import myImage from "../../karan.jpg"
 import Title from "../Title"
 export default function AboutMe(props) {
     return (
-        <div ref={props.aboutMeRef} className="flex flex-col gap-10 pb-96">
+        <div ref={props.aboutMeRef} className="flex flex-col gap-10 pb-32">
             <Title>aboutMe</Title>
             <div className="flex">
                 <div>

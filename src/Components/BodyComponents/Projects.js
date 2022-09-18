@@ -20,7 +20,7 @@ export default function Projects(props) {
   const firstRef = useRef(null);
   const secondRef = useRef(null);
   return (
-    <div ref={props.projectsRef} className="flex flex-col gap-10">
+    <div ref={props.projectsRef} className="flex flex-col gap-10 pb-32">
       <Title>projects</Title>
       <div>
         <div className="flex gap-2 align-middle cursor-pointer">
