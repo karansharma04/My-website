@@ -10,10 +10,10 @@ export default function Cp(props) {
             </div>
             <div className="flex gap-4 leading-8">
                 <div className="align-baseline">My Handles:</div>
-                <div><a href="https://codeforces.com/profile/_karan">
+                <div><a href="https://codeforces.com/profile/" rel="noopener noreferrer" target="_blank">
                     <SiCodeforces className="transition-all ease-linear hover:scale-125 hover:text-yellow-100 text-white hover:-translate-y-1" size="2em" />
                 </a></div>
-                <div className="px-4"><a href="https://www.codechef.com/users/karan_04">
+                <div className="px-4"><a href="https://www.codechef.com/users/karan_04" rel="noopener noreferrer" target="_blank">
                     <SiCodechef className="transition-all ease-linear hover:scale-125 hover:text-yellow-100 text-white hover:-translate-y-1" size="2em"  />
                 </a></div>
             </div>

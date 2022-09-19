@@ -5,28 +5,35 @@ import { useState, useEffect, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import { BsArrowUp } from "react-icons/bs";
 import NavIcon from "./NavbarComponents/NavIcon";
+import NavMenuItem from "./NavbarComponents/NavMenuItem";
 
 export default function NavBar(props) {
   const AboutMeHandler = useCallback(() => {
     props.aboutMeRef.current?.scrollIntoView({ behavior: "smooth" });
+    setShowSideMenu(false);
   }, [props.aboutMeRef]);
 
   const EducationHandler = useCallback(() => {
     props.educationRef.current?.scrollIntoView({ behavior: "smooth" });
+    setShowSideMenu(false);
   }, [props.educationRef]);
 
   const ExperienceHandler = useCallback(() => {
     props.experienceRef.current?.scrollIntoView({ behavior: "smooth" });
+    setShowSideMenu(false);
   }, [props.experienceRef]);
 
   const ProjectsHandler = useCallback(() => {
     props.projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+    setShowSideMenu(false);
   }, [props.projectsRef]);
   const AchievementsHandler = useCallback(() => {
     props.achievementsRef.current?.scrollIntoView({ behavior: "smooth" });
+    setShowSideMenu(false);
   }, [props.achievementsRef]);
   const CpHandler = useCallback(() => {
     props.cpRef.current?.scrollIntoView({ behavior: "smooth" });
+    setShowSideMenu(false);
   }, [props.cpRef]);
 
   const [showUpArrow, setShowUpArrow] = useState(false);
@@ -103,9 +110,30 @@ export default function NavBar(props) {
           </NavElement>
         </div>
       ) : (
-        <div onClick={()=>setShowSideMenu(!showSideMenu)} className="flex justify-end bg-black text-[#B9B9B9]font-ibmMono">
-          <NavIcon close={showSideMenu} />
-        </div>
+        <>
+          <div
+            onClick={() => setShowSideMenu(!showSideMenu)}
+            className="flex justify-end bg-black text-[#B9B9B9]font-ibmMono"
+          >
+            <NavIcon close={showSideMenu} />
+          </div>
+
+          <div
+            className={`fixed top-[88px] bg-zinc-800 gap-5 md:gap-10 w-full flex flex-col justify-start items- overflow-scroll ${
+              showSideMenu ? "h-full pt-5 md:pt-10" : "top-0 h-0"
+            } transition-all duration-500`}
+          >
+            <NavMenuItem onClick={AboutMeHandler}>aboutMe</NavMenuItem>
+            <NavMenuItem onClick={EducationHandler}>education</NavMenuItem>
+            <NavMenuItem onClick={ExperienceHandler}>experience</NavMenuItem>
+            <NavMenuItem onClick={ProjectsHandler}>projects</NavMenuItem>
+            <NavMenuItem onClick={AchievementsHandler}>achievements</NavMenuItem>
+            <NavMenuItem onClick={CpHandler}>competitiveProgramming</NavMenuItem>
+            <NavMenuItem className="underline underline-offset-2" ><a href={karanResume} rel="noopener noreferrer" target="_blank">
+              resume
+            </a></NavMenuItem>
+          </div>
+        </>
       )}
     </div>
   );
