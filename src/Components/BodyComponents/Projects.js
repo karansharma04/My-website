@@ -43,7 +43,7 @@ export default function Projects(props) {
         </div>
         <div
           className={`bg-black overflow-hidden px-6 ${
-            showInterviewTrackerContent ? "h-80 sm:h-72 md:h-56 lg:h-48 xl:h-32 pt-4" : "h-0 bg-transparent text-transparent"
+            showInterviewTrackerContent ? "h-96 sm:h-80 md:h-56 lg:h-48 xl:h-32 pt-4" : "h-0 bg-transparent text-transparent"
           } transition-all duration-400 ease-linear`}
           ref={firstRef}
         >
