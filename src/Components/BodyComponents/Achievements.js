@@ -18,7 +18,7 @@ export default function Achievements(props) {
                 <div>Got a global rank of 470 particicpating in Codeforces Div 2 round among ~30000 particicpants.</div>
             </div>
             <div className="flex flex-col sm:flex-row">
-                <div className="text-white px-2">codechef:</div>
+                <div className="text-white px-2">codeChef:</div>
                 <div>Got a global rank of 70 in CodeChef Lunchtime.</div>
             </div>
         </div>
