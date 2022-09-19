@@ -20,13 +20,10 @@ export default function Intro() {
           Developer and Competitive Programmer
         </div>
         <div className="pb-8 text-zinc-450 leading-7 text-center sm:text-left">
-          I'm a final year B.Tech undergrad pursuing{" "}
-          <span className=" text-sky-600">
-            Computer Science and Engineering
-          </span>{" "}
-          from IIT Guwahati. I'm naturally inclined towards problem solving and
-          am interested in CS fundamentals, web development with special focus
-          on UI/UX, and competitive programming.
+          I'm a final year B.Tech undergrad pursuing Computer Science and
+          Engineering from IIT Guwahati. I'm naturally inclined towards problem
+          solving and am interested in CS fundamentals, web development with
+          special focus on UI/UX, and competitive programming.
         </div>
       </div>
       <div className="flex px-4 justify-center sm:justify-start">
