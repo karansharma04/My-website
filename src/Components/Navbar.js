@@ -53,7 +53,6 @@ export default function NavBar(props) {
   const [windowSize, setWindowSize] = useState(getWindowSize());
 
   useEffect(() => {
-    console.log(windowSize.innerWidth);
     function handleWindowResize() {
       setWindowSize(getWindowSize());
     }
