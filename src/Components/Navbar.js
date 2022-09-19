@@ -126,11 +126,17 @@ export default function NavBar(props) {
             <NavMenuItem onClick={EducationHandler}>education</NavMenuItem>
             <NavMenuItem onClick={ExperienceHandler}>experience</NavMenuItem>
             <NavMenuItem onClick={ProjectsHandler}>projects</NavMenuItem>
-            <NavMenuItem onClick={AchievementsHandler}>achievements</NavMenuItem>
-            <NavMenuItem onClick={CpHandler}>competitiveProgramming</NavMenuItem>
-            <NavMenuItem className="underline underline-offset-2" ><a href={karanResume} rel="noopener noreferrer" target="_blank">
-              resume
-            </a></NavMenuItem>
+            <NavMenuItem onClick={AchievementsHandler}>
+              achievements
+            </NavMenuItem>
+            <NavMenuItem onClick={CpHandler}>
+              competitiveProgramming
+            </NavMenuItem>
+            <NavMenuItem className="underline underline-offset-2">
+              <a href={karanResume} rel="noopener noreferrer" target="_blank">
+                resume
+              </a>
+            </NavMenuItem>
           </div>
         </>
       )}
