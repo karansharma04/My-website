@@ -67,7 +67,7 @@ export default function NavBar(props) {
   const [showSideMenu, setShowSideMenu] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 text-black w-full">
+    <div className="fixed z-10 top-0 left-0 text-black w-full">
       <CSSTransition
         classNames="up-arrow"
         in={showUpArrow}
@@ -118,8 +118,8 @@ export default function NavBar(props) {
           </div>
 
           <div
-            className={`fixed top-[88px] bg-zinc-800 gap-5 md:gap-10 w-full flex flex-col justify-start items- overflow-scroll ${
-              showSideMenu ? "h-full pt-5 md:pt-10" : "top-0 h-0"
+            className={`fixed z-auto top-[88px] bg-zinc-800 gap-5 md:gap-10 w-full flex flex-col justify-start items- overflow-scroll ${
+              showSideMenu ? "h-full pt-5 md:pt-10 " : "top-0 h-0"
             } transition-all duration-500`}
           >
             <NavMenuItem onClick={AboutMeHandler}>aboutMe</NavMenuItem>
