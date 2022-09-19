@@ -2,7 +2,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export default function Intro() {
   return (
-    <div className="pb-32">
+    <div className="pb-8 sm:pb-16 md:pb-24 lg:pb-32">
       <div className="text-center sm:text-left">
         <span className="bg-black">Hi all,</span>
       </div>

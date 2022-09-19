@@ -3,7 +3,7 @@ import { SiCodeforces, SiCodechef } from "react-icons/si"
 
 export default function Cp(props) {
     return (
-        <div ref={props.cpRef} className="flex flex-col gap-10 pb-32">
+        <div ref={props.cpRef} className="flex flex-col gap-10 pb-8 sm:pb-16 md:pb-24 lg:pb-32">
             <Title>competitiveProgamming</Title>
             <div>
                 I give competitive programming contests in my free time. I'm a <span className="text-zinc-200">5 star rated coder</span> on CodeChef and <span className="text-zinc-200">Expert</span> on Codeforces.

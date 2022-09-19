@@ -3,7 +3,7 @@ import Title from "../Title"
 
 export default function Achievements(props) {
     return (
-        <div ref={props.achievementsRef} className="flex flex-col gap-10 pb-32">
+        <div ref={props.achievementsRef} className="flex flex-col gap-10 pb-8 sm:pb-16 md:pb-24 lg:pb-32">
             <Title>achievements</Title>
             <div className="flex flex-col sm:flex-row">
                 <div className="text-white px-2">jeeAdvanced2019:</div>
