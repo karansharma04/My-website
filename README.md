@@ -1,2 +1,2 @@
 # Karan Sharma's Personal Website
-karan-sharma.netlify.app
+https://karan-sharma.netlify.app/
