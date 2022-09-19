@@ -5,8 +5,8 @@ export default function AboutMe(props) {
     return (
         <div ref={props.aboutMeRef} className="flex flex-col gap-10 pb-8 sm:pb-16 md:pb-24 lg:pb-32">
             <Title>aboutMe</Title>
-            <div className="flex flex-col lg:flex-row justify-center align-middle items-center pt-10">
-                <div className="flex p-10 pt-0 w-3/4 lg:p-0 lg:w-screen xl:w-2/3 2xl:w-1/3 align-center justify-center">
+            <div className="flex flex-col lg:flex-row justify-center align-middle items-center ">
+                <div className="flex p-10 pt-0 w-3/4 lg:p-0 lg:w-screen xl:w-2/3 2xl:w-1/4 align-center justify-center">
                     <img src={myImage} alt="Karan Sharma"/>
                 </div>
                 <div className="px-10 leading-7">

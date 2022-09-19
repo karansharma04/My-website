@@ -12,7 +12,7 @@ function App() {
   const cpRef = useRef(null);
 
   return (
-    <div className="bg-slate-900">
+    <div className="bg-slate-900 md:text-lg">
       <div className="font-ibmMono flex-col  text-center sm:text-left">
       <NavBar
         aboutMeRef={aboutMeRef}
