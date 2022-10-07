@@ -12,8 +12,8 @@ export default function Body(props) {
             <Intro />
             <AboutMe aboutMeRef={props.aboutMeRef} />
             <Education educationRef={props.educationRef} />
-            <Experience experienceRef={props.experienceRef} />
             <Projects projectsRef={props.projectsRef} />
+            <Experience experienceRef={props.experienceRef} />
             <Achievements achievementsRef={props.achievementsRef} />
             <Cp cpRef={props.cpRef} />
         </div>

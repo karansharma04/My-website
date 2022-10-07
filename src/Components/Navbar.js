@@ -124,8 +124,8 @@ export default function NavBar(props) {
           >
             <NavMenuItem onClick={AboutMeHandler}>aboutMe</NavMenuItem>
             <NavMenuItem onClick={EducationHandler}>education</NavMenuItem>
-            <NavMenuItem onClick={ExperienceHandler}>experience</NavMenuItem>
             <NavMenuItem onClick={ProjectsHandler}>projects</NavMenuItem>
+            <NavMenuItem onClick={ExperienceHandler}>experience</NavMenuItem>
             <NavMenuItem onClick={AchievementsHandler}>
               achievements
             </NavMenuItem>
