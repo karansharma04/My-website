@@ -98,8 +98,8 @@ export default function NavBar(props) {
         <div className="flex justify-end bg-black text-[#B9B9B9] font-ibmMono">
           <NavElement onClick={AboutMeHandler}>aboutMe</NavElement>
           <NavElement onClick={EducationHandler}>education</NavElement>
-          <NavElement onClick={ExperienceHandler}>experience</NavElement>
           <NavElement onClick={ProjectsHandler}>projects</NavElement>
+          <NavElement onClick={ExperienceHandler}>experience</NavElement>
           <NavElement onClick={AchievementsHandler}>achievements</NavElement>
           <NavElement onClick={CpHandler}>competitiveProgramming</NavElement>
           <NavElement className="underline underline-offset-2">
