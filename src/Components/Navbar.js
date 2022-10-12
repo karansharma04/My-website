@@ -6,6 +6,7 @@ import { CSSTransition } from "react-transition-group";
 import { BsArrowUp } from "react-icons/bs";
 import NavIcon from "./NavbarComponents/NavIcon";
 import NavMenuItem from "./NavbarComponents/NavMenuItem";
+import ThemeToggle from "./NavbarComponents/ThemeToggle";
 
 export default function NavBar(props) {
   const AboutMeHandler = useCallback(() => {
@@ -96,6 +97,7 @@ export default function NavBar(props) {
       </CSSTransition>
       {windowSize.innerWidth > 1000 ? (
         <div className="flex justify-end bg-black text-[#B9B9B9] font-ibmMono">
+          <ThemeToggle mode={props.mode} setMode={props.setMode}/>
           <NavElement onClick={AboutMeHandler}>aboutMe</NavElement>
           <NavElement onClick={EducationHandler}>education</NavElement>
           <NavElement onClick={ProjectsHandler}>projects</NavElement>
