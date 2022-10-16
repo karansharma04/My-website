@@ -1,4 +1,4 @@
-import myImage from "../../karan.jpg";
+import myImage from "../../profile.jpg";
 import Title from "../Title";
 export default function AboutMe(props) {
   return (
