@@ -97,7 +97,7 @@ export default function NavBar(props) {
       </CSSTransition>
       {windowSize.innerWidth > 1000 ? (
         <div className="flex justify-end items-center bg-nav text-color-base font-ibmMono transition-all duration-300">
-          <ThemeToggle mode={props.mode} setMode={props.setMode}/>
+          <ThemeToggle mode={props.mode} setMode={props.setMode} />
           <NavElement onClick={AboutMeHandler}>aboutMe</NavElement>
           <NavElement onClick={EducationHandler}>education</NavElement>
           <NavElement onClick={ProjectsHandler}>projects</NavElement>
@@ -113,32 +113,31 @@ export default function NavBar(props) {
       ) : (
         <>
           <div
-            className="flex justify-between items-center px-2 bg-nav transition-all duration-300 text-color-base font-ibmMono"
+            className="flex relative justify-between items-center px-2 bg-nav transition-all duration-300 text-color-base font-ibmMono"
           >
-            <ThemeToggle mode={props.mode} setMode={props.setMode}/>
+            <ThemeToggle mode={props.mode} setMode={props.setMode} />
             <NavIcon onClick={() => setShowSideMenu(!showSideMenu)} close={showSideMenu} />
-          </div>
 
-          <div
-            className={`fixed z-auto top-[44px] md:top-[88px] bg-nav-dropdown gap-5 md:gap-10 w-full flex flex-col justify-start items- overflow-scroll ${
-              showSideMenu ? "h-full pt-5 md:pt-10 " : "top-0 h-0"
-            } transition-all duration-500`}
-          >
-            <NavMenuItem onClick={AboutMeHandler}>aboutMe</NavMenuItem>
-            <NavMenuItem onClick={EducationHandler}>education</NavMenuItem>
-            <NavMenuItem onClick={ProjectsHandler}>projects</NavMenuItem>
-            <NavMenuItem onClick={ExperienceHandler}>experience</NavMenuItem>
-            <NavMenuItem onClick={AchievementsHandler}>
-              achievements
-            </NavMenuItem>
-            <NavMenuItem onClick={CpHandler}>
-              competitiveProgramming
-            </NavMenuItem>
-            <NavMenuItem className="underline underline-offset-2">
-              <a href={karanResume} rel="noopener noreferrer" target="_blank">
-                resume
-              </a>
-            </NavMenuItem>
+            <div
+              className={`absolute top-full left-0 bg-nav-dropdown gap-5 md:gap-10 w-full flex flex-col justify-start items-center overflow-scroll ${showSideMenu ? "h-screen pt-5 md:pt-10 " : "top-0 h-0"
+                } transition-all duration-500`}
+            >
+              <NavMenuItem onClick={AboutMeHandler}>aboutMe</NavMenuItem>
+              <NavMenuItem onClick={EducationHandler}>education</NavMenuItem>
+              <NavMenuItem onClick={ProjectsHandler}>projects</NavMenuItem>
+              <NavMenuItem onClick={ExperienceHandler}>experience</NavMenuItem>
+              <NavMenuItem onClick={AchievementsHandler}>
+                achievements
+              </NavMenuItem>
+              <NavMenuItem onClick={CpHandler}>
+                competitiveProgramming
+              </NavMenuItem>
+              <NavMenuItem className="underline underline-offset-2">
+                <a href={karanResume} rel="noopener noreferrer" target="_blank">
+                  resume
+                </a>
+              </NavMenuItem>
+            </div>
           </div>
         </>
       )}

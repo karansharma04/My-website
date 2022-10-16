@@ -25,9 +25,9 @@
 }
 
 :root .light {
-    --color-slate: rgb(195, 211, 255);
+    --color-slate: rgb(255, 255, 255);
     --bg-app: var(--color-slate);
-    --bg-nav: rgb(159, 170, 255);
+    --bg-nav: rgb(198, 204, 254);
     --bg-nav-dropdown: rgb(191, 198, 251);
     --text-base: rgb(36, 20, 42);
     --text-color-hover: rgb(29, 83, 184);
