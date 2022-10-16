@@ -15,7 +15,7 @@ export default function ThemeToggle(props) {
 
 	return (
 		<div onClick={changeMode} className={`cursor-pointer bg-toggle flex items-center justify-center p-1 m-1 h-3/4 rounded-full gap-1 text-color-toggle-icon`}>
-			<BsFillCircleFill className={`absolute transition-all duration-200 ${light ? "-translate-x-3" : "translate-x-3"}`} />
+			<BsFillCircleFill className={`absolute transition-all duration-200 ${light ? "-translate-x-2.5" : "translate-x-2.5"}`} />
 			<MdLightMode />
 			<MdDarkMode />
 		</div>

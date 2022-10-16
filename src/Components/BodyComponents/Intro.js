@@ -34,7 +34,7 @@ export default function Intro() {
             target="_blank"
           >
             <FaLinkedinIn
-              className="transition-all hover:scale-125 hover:text-color-hover text-color-hover hover:-translate-y-1"
+              className="transition-all hover:scale-125 hover:text-color-hover  hover:-translate-y-1"
               size="2em"
             />
           </a>
@@ -46,7 +46,7 @@ export default function Intro() {
             target="_blank"
           >
             <FaGithub
-              className="transition-all hover:scale-125 hover:text-color-hover text-color-hover hover:-translate-y-1"
+              className="transition-all hover:scale-125 hover:text-color-hover  hover:-translate-y-1"
               size="2em"
             />
           </a>
