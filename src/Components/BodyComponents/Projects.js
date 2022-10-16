@@ -23,12 +23,12 @@ export default function Projects(props) {
       <div>
         <div className="flex gap-2 align-middle cursor-pointer">
           <div
-            className="align-middle pt-1 text-white"
+            className="align-middle pt-1 text-color-hover"
             onClick={toggleShowInterviewTrackerContent}
           >
             <div
               className={`${
-                showInterviewTrackerContent && "rotate-45 text-yellow-500"
+                showInterviewTrackerContent && "rotate-45 text-color-rotating-plus"
               } transition-all duration-400 ease-linear`}
             >
               <BsPlusLg />
@@ -42,7 +42,7 @@ export default function Projects(props) {
           </div>
         </div>
         <div
-          className={`bg-black overflow-hidden px-6 ${
+          className={`bg-nav overflow-hidden px-6 ${
             showInterviewTrackerContent ? "h-96 sm:h-80 md:h-56 lg:h-48 xl:h-32 pt-4" : "h-0 bg-transparent text-transparent"
           } transition-all duration-400 ease-linear`}
           ref={firstRef}
@@ -62,12 +62,12 @@ export default function Projects(props) {
       <div>
         <div className="flex gap-2 align-middle cursor-pointer">
           <div
-            className="align-middle pt-1 text-white"
+            className="align-middle pt-1 text-color-hover"
             onClick={toggleShowVisualizerContent}
           >
             <div
               className={`${
-                showVisualizerContent && "rotate-45 text-yellow-500"
+                showVisualizerContent && "rotate-45 text-color-rotating-plus"
               } transition-all duration-400 ease-linear`}
             >
               <BsPlusLg />
@@ -81,7 +81,7 @@ export default function Projects(props) {
           </div>
         </div>
         <div
-          className={`bg-black overflow-hidden px-6 ${
+          className={`bg-nav overflow-hidden px-6 ${
             showVisualizerContent ? "h-60 sm:h-56 md:h-48 lg:h-42 xl:h-24  pt-4" : "h-0"
           } transition-all duration-400 ease-linear`}
           ref={secondRef}

@@ -68,7 +68,7 @@ export default function NavBar(props) {
   const [showSideMenu, setShowSideMenu] = useState(false);
 
   return (
-    <div className="fixed z-10 top-0 left-0 text-black w-full">
+    <div className="fixed z-10 top-0 left-0 w-full">
       <CSSTransition
         classNames="up-arrow"
         in={showUpArrow}
@@ -90,13 +90,13 @@ export default function NavBar(props) {
           }
         >
           <BsArrowUp
-            className="transition-all hover:scale-125  hover:text-yellow-100 text-white hover:-translate-y-1"
+            className="transition-all hover:scale-125  hover:text-color-hover hover:-translate-y-1"
             size="3em"
           />
         </div>
       </CSSTransition>
       {windowSize.innerWidth > 1000 ? (
-        <div className="flex justify-end bg-black text-[#B9B9B9] font-ibmMono">
+        <div className="flex justify-end items-center bg-nav text-color-base font-ibmMono transition-all duration-300">
           <ThemeToggle mode={props.mode} setMode={props.setMode}/>
           <NavElement onClick={AboutMeHandler}>aboutMe</NavElement>
           <NavElement onClick={EducationHandler}>education</NavElement>
@@ -113,14 +113,14 @@ export default function NavBar(props) {
       ) : (
         <>
           <div
-            onClick={() => setShowSideMenu(!showSideMenu)}
-            className="flex justify-end bg-black text-[#B9B9B9]font-ibmMono"
+            className="flex justify-between items-center px-2 bg-nav transition-all duration-300 text-color-base font-ibmMono"
           >
-            <NavIcon close={showSideMenu} />
+            <ThemeToggle mode={props.mode} setMode={props.setMode}/>
+            <NavIcon onClick={() => setShowSideMenu(!showSideMenu)} close={showSideMenu} />
           </div>
 
           <div
-            className={`fixed z-auto top-[44px] md:top-[88px] bg-zinc-800 gap-5 md:gap-10 w-full flex flex-col justify-start items- overflow-scroll ${
+            className={`fixed z-auto top-[44px] md:top-[88px] bg-nav-dropdown gap-5 md:gap-10 w-full flex flex-col justify-start items- overflow-scroll ${
               showSideMenu ? "h-full pt-5 md:pt-10 " : "top-0 h-0"
             } transition-all duration-500`}
           >

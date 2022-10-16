@@ -5,7 +5,7 @@ export default function NavElement(props) {
       <div
         onClick={props.onClick}
         className={clsx(
-          "transition-all duration-400 hover:text-yellow-100 hover:cursor-pointer",
+          "transition-all duration-400 hover:text-color-hover hover:cursor-pointer",
           props.className
         )}
       >

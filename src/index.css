@@ -9,9 +9,34 @@
     box-sizing: border-box;
 }
 
-:root {
-    --spead: 500ms;
-    --icon-classname: transition-all ease-linear hover:scale-125 hover:-translate-y-1;
+:root .dark {
+    --color-slate: rgb(15 23 42 / 1);
+    --bg-app: var(--color-slate);
+    --bg-nav: rgb(0, 0, 0);
+    --bg-nav-dropdown: rgb(56, 56, 56);
+    --text-base: #B9B9B9;
+    --text-color-hover: rgb(254 249 195 / 1);
+    --arrow-bg: rgb(0, 0, 0);
+    --arrow-color: white;
+    --arrow-color-initial: transparent;
+    --toggle-bg: rgb(52, 52, 52);
+    --toggle-icon-color: var(--text-color-hover);
+    --rotating-plus: rgb(234 179 8 / 1);
+}
+
+:root .light {
+    --color-slate: rgb(195, 211, 255);
+    --bg-app: var(--color-slate);
+    --bg-nav: rgb(159, 170, 255);
+    --bg-nav-dropdown: rgb(191, 198, 251);
+    --text-base: rgb(36, 20, 42);
+    --text-color-hover: rgb(29, 83, 184);
+    --arrow-bg: var(--bg-nav);
+    --arrow-color: rgb(69, 69, 69);
+    --arrow-color-initial: transparent;
+    --toggle-bg: rgb(99, 100, 100);
+    --toggle-icon-color: rgb(0, 0, 0);
+    --rotating-plus: rgb(86, 14, 255);
 }
 
 .dropdown-inpage-enter {
@@ -53,36 +78,36 @@
 .up-arrow-enter {
     right: 32px;
     bottom: 0px;
-    color: black;
+    color: var(--arrow-color-initial);
     background-color: transparent;
 }
 
 .up-arrow-enter-active {
     right: 32px;
     bottom: 32px;
-    color: white;
-    background-color: black;
+    color: var(--arrow-color);
+    background-color: var(--arrow-bg);
     transition: all 0.4s linear;
 }
 
 .up-arrow-enter-done {
     right: 32px;
     bottom: 32px;
-    color: white;
-    background-color: black;
+    color: var(--arrow-color);
+    background-color: var(--arrow-bg);
 }
 
 .up-arrow-exit {
     right: 32px;
     bottom: 32px;
-    color: white;
-    background-color: black;
+    color: var(--arrow-color);
+    background-color: var(--arrow-bg);
 }
 
 .up-arrow-exit-active {
     right: 32px;
     bottom: 0px;
-    color: black;
+    color: var(--arrow-color-initial);
     background-color: transparent;
     transition: all 0.4s linear;
 }
@@ -91,36 +116,36 @@
     .up-arrow-enter {
         right: 32px;
         bottom: 0px;
-        color: black;
+        color: var(--arrow-color-initial);
         background-color: transparent;
     }
-    
+
     .up-arrow-enter-active {
         right: 32px;
         bottom: 32px;
-        color: white;
-        background-color: black;
+        color: var(--arrow-color);
+        background-color: var(--arrow-bg);
         transition: all 0.4s linear;
     }
-    
+
     .up-arrow-enter-done {
         right: 32px;
         bottom: 32px;
-        color: white;
-        background-color: black;
+        color: var(--arrow-color);
+        background-color: var(--arrow-bg);
     }
-    
+
     .up-arrow-exit {
         right: 32px;
         bottom: 32px;
-        color: white;
-        background-color: black;
+        color: var(--arrow-color);
+        background-color: var(--arrow-bg);
     }
-    
+
     .up-arrow-exit-active {
         right: 32px;
         bottom: 0px;
-        color: black;
+        color: var(--arrow-color-initial);
         background-color: transparent;
         transition: all 0.4s linear;
     }

@@ -13,28 +13,28 @@ function App() {
   const [mode, setMode] = useState('dark');
 
   return (
-    <div className="bg-slate-900 md:text-lg">
-      <div className="font-ibmMono flex-col  text-center sm:text-left">
-      <NavBar
-        mode={mode}
-        setMode={setMode}
-        aboutMeRef={aboutMeRef}
-        educationRef={educationRef}
-        experienceRef={experienceRef}
-        projectsRef={projectsRef}
-        achievementsRef={achievementsRef}
-        cpRef={cpRef}
-      />
-      <Body
-        aboutMeRef={aboutMeRef}
-        educationRef={educationRef}
-        experienceRef={experienceRef}
-        projectsRef={projectsRef}
-        achievementsRef={achievementsRef}
-        cpRef={cpRef}
-      />
-      <Footer />
-    </div> 
+    <div className={`md:text-lg ${mode}`}>
+      <div className="bg-base transition-all duration-300 font-ibmMono flex-col  text-center sm:text-left">
+        <NavBar
+          mode={mode}
+          setMode={setMode}
+          aboutMeRef={aboutMeRef}
+          educationRef={educationRef}
+          experienceRef={experienceRef}
+          projectsRef={projectsRef}
+          achievementsRef={achievementsRef}
+          cpRef={cpRef}
+        />
+        <Body
+          aboutMeRef={aboutMeRef}
+          educationRef={educationRef}
+          experienceRef={experienceRef}
+          projectsRef={projectsRef}
+          achievementsRef={achievementsRef}
+          cpRef={cpRef}
+        />
+        <Footer />
+      </div>
     </div>
   );
 }
