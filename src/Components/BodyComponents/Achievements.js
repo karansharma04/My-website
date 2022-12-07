@@ -21,6 +21,14 @@ export default function Achievements(props) {
                 <div className="text-color-hover px-2">codeChef:</div>
                 <div>Got a global rank of 70 in CodeChef Lunchtime.</div>
             </div>
+            <div className="flex flex-col sm:flex-row">
+                <div className="text-color-hover px-2">googleKickstart2022:</div>
+                <div>Got a global rank of 1466 in Round G of Google Kickstart 2022 among ~13000 particicpants.</div>
+            </div>
+            <div className="flex flex-col sm:flex-row">
+                <div className="text-color-hover px-2">googleCodeJam2022:</div>
+                <div>Got a global rank of 1855 in Round 1 of Google Code Jam 2022 among ~13000 particicpants.</div>
+            </div>
         </div>
     )
 }
