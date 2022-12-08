@@ -15,7 +15,7 @@ export default function AboutMe(props) {
         </div>
         <div className="px-10 leading-7">
           <div className="">
-            Hello there! I'm currently in the final year of my B.Tech degree focused in Computer Science and Engineering from IIT Guwahati. I'm a quick learner and a fan of learning by reading documentations. I love to take on complex tasks and challenges, and to devise efficient solutions in code to solve them.
+            Hello there! I'm currently in the final year of my B.Tech degree focused in Computer Science and Engineering from IIT Guwahati. I'm a quick learner and like to learn by reading documentations. I love to take on complex tasks and challenges, and to devise efficient solutions in code to solve them.
           </div>
           <div>
             Last summer I interned at DevRev, where I developed and deployed a
