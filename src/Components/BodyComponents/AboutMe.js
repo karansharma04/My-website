@@ -13,14 +13,13 @@ export default function AboutMe(props) {
         </div>
         <div className="px-10 leading-7">
           <div className="">
-            Hi all! My name is Karan, and I'm a final year B.Tech undergrad
-            student pursuing Computer Science and Engineering from IIT Guwahati.
+            Hello there! I'm currently in the final year of my B.Tech degree focused in Computer Science and Engineering from IIT Guwahati. I'm a quick learner and a fan of learning by reading documentations. I love to take on complex tasks and challenges, and to devise efficient solutions in code to solve them.
           </div>
           <div>
             Last summer I interned at DevRev, where I developed and deployed a
             video call feature and it's corresponding frameworks end-to-end in
             app, working on various technologies like React Typescript and
-            Cypress for front-end and Golang for backend.
+            Cypress for front-end, and Golang for backend.
           </div>
           <div className="pt-10">
             I'm currently continuing my internship at DevRev part-time as a

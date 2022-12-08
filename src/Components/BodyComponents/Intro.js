@@ -4,10 +4,10 @@ export default function Intro() {
   return (
     <div className="pb-8 sm:pb-16 md:pb-24 lg:pb-32">
       <div className="text-center sm:text-left">
-        <span className="bg-nav">Hi all,</span>
+        <span className="text-color-hover">Hi,</span>
       </div>
       <div className="text-center sm:text-left">
-        <span className="bg-nav">I am</span>
+        <span className="text-color-hover">I am</span>
       </div>
       <div>
         <div className="py-6 text-4xl md:text-5xl lg:text-6xl text-color-hover text-center sm:text-left">
