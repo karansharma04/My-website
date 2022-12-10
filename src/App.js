@@ -1,7 +1,9 @@
 import NavBar from "./Components/Navbar";
 import Body from "./Components/Body";
 import Footer from "./Components/Footer";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+import {getCookie, setCookie} from "./LocalStorage/cookies";
 
 function App() {
   const aboutMeRef = useRef(null);
@@ -10,7 +12,11 @@ function App() {
   const projectsRef = useRef(null);
   const achievementsRef = useRef(null);
   const cpRef = useRef(null);
-  const [mode, setMode] = useState('dark');
+  const [mode, setMode] = useState(getCookie("mode")??"dark");
+
+  useEffect(()=>{
+    setCookie("mode", mode, 3);
+  }, [mode]);
 
   return (
     <div className={`md:text-lg ${mode}`}>
