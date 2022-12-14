@@ -1,5 +1,4 @@
 import Title from "../Title";
-import { useState } from "react";
 
 export default function Achievements(props) {
   const achievements = [
