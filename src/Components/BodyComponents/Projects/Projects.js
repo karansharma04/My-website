@@ -13,6 +13,7 @@ export default function Projects(props) {
         title={
           "Page Migration Simulator (Dr. T. Venkatesh, Dept of CSE, IIT Guwahati)"
         }
+        link="https://github.com/karansharma04/page-migration-simulator"
         body={
           <div id="page-migration">
             <div>
@@ -27,7 +28,21 @@ export default function Projects(props) {
         bodyId="page-migration"
       />
       <Project
+        title={"A* Pathfinding Visualizer (Personal Project)"}
+        link="https://github.com/karansharma04/A-Path-Finding-Visualizer"
+        body={
+          <div id="visualizer">
+            - Developed a python visualization of the A* pathfinding algorithm
+            using Pygame and TKinter, which allows users to pick a start and end
+            location and view the process of finding the shortest path.
+          </div>
+        }
+        className={"h-60 sm:h-56 md:h-48 lg:h-42 xl:h-24  pt-4"}
+        bodyId="visualizer"
+      />
+      <Project
         title={"Interview Preparation Tracker (Coding Club, IITG)"}
+        link="https://github.com/karansharma04/Interview-Tracker"
         body={
           <div id="interview">
             <div>
@@ -43,18 +58,6 @@ export default function Projects(props) {
           </div>
         }
         bodyId="interview"
-      />
-      <Project
-        title={"A* Pathfinding Visualizer (Personal Project)"}
-        body={
-          <div id="visualizer">
-            - Developed a python visualization of the A* pathfinding algorithm
-            using Pygame and TKinter, which allows users to pick a start and end
-            location and view the process of finding the shortest path.
-          </div>
-        }
-        className={"h-60 sm:h-56 md:h-48 lg:h-42 xl:h-24  pt-4"}
-        bodyId="visualizer"
       />
     </div>
   );

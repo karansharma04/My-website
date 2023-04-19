@@ -1,7 +1,8 @@
 import { useState, useRef } from "react";
 import { BsPlusLg } from "react-icons/bs";
+import { BiLinkExternal } from "react-icons/bi";
 
-export const Project = ({ title, body, className, bodyId }) => {
+export const Project = ({ title, body, className, bodyId, link }) => {
   const [showContent, setShowContent] = useState(false);
 
   const toggleShowContent = () => {
@@ -23,7 +24,7 @@ export const Project = ({ title, body, className, bodyId }) => {
     <div>
       <div className="flex gap-2 align-middle cursor-pointer">
         <div
-          className="align-middle pt-1 text-color-hover"
+          className="flex items-center text-color-hover"
           onClick={toggleShowContent}
         >
           <div
@@ -40,12 +41,21 @@ export const Project = ({ title, body, className, bodyId }) => {
         >
           {title}
         </div>
+        <div
+          className="flex items-center text-color-hover"
+        >
+          <div
+            className={`hover:text-color-rotating-plus transition-all duration-400 ease-linear`}
+          >
+            <a href={link} rel="noopener noreferrer" target="_blank">
+            <BiLinkExternal />
+            </a>
+          </div>
+        </div>
       </div>
       <div
         className={`px-6 ${
-          showContent
-            ? "py-4 bg-nav"
-            : "bg-transparent text-transparent"
+          showContent ? "py-4 bg-nav" : "bg-transparent text-transparent"
         }  transition-all duration-400 ease-linear`}
         style={{
           height: componentHeightString,
