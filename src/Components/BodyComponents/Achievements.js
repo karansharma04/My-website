@@ -19,7 +19,7 @@ export default function Achievements(props) {
       body: "Max rating of 1707(expert) on Codeforces.",
     },
     {
-      title: "codeChef",
+      title: "codeChefLunchTime",
       body: "Got a global rank of 70 in CodeChef Lunchtime.",
     },
     {
@@ -28,11 +28,11 @@ export default function Achievements(props) {
     },
     {
       title: "googleKickstart2022",
-      body: "Got a global rank of 1466 in Round G of Google Kickstart 2022 among ~13000 particicpants.",
+      body: "Got a global rank of 352 in Round G of Google Kickstart 2022 among ~13000 particicpants.",
     },
     {
       title: "googleCodeJam2022",
-      body: "Got a global rank of 1855 in Round 1 of Google Code Jam 2022 among ~13000 particicpants.",
+      body: "Got a global rank of 381 in Round 1 of Google Code Jam 2022 among ~13000 particicpants.",
     },
   ];
 
