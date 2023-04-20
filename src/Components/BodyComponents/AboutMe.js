@@ -35,7 +35,7 @@ export default function AboutMe(props) {
           </div>
           <div>
             I'm currently continuing my internship at DevRev part-time as a
-            Member of Technical Staff intern along with my degree.
+            Software Engineer along with my degree.
           </div>
           <div>
             In my free time, I love to watch f1, and give competitive
