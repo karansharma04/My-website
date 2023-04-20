@@ -14,7 +14,7 @@ export default function Intro() {
           Karan Sharma,
         </div>
         <div className="text-2xl md:text-3xl lg:text-4xl pb-4 text-center sm:text-left">
-          IIT Guwahati Undergrad,
+          IIT Guwahati CS Undergrad,
         </div>
         <div className="text-2xl md:text-3xl lg:text-4xl pb-6 text-center sm:text-left">
           Programmer and Problem Solver
