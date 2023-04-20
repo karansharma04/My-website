@@ -17,13 +17,12 @@ export default function Intro() {
           IIT Guwahati Undergrad,
         </div>
         <div className="text-2xl md:text-3xl lg:text-4xl pb-6 text-center sm:text-left">
-          Developer and Competitive Programmer
+          Programmer and Problem Solver
         </div>
         <div className="pb-8 leading-7 text-center sm:text-left">
           I'm a final year B.Tech undergrad pursuing Computer Science and
-          Engineering from IIT Guwahati. I'm naturally inclined towards problem
-          solving and am interested in CS fundamentals, web development with
-          special focus on UI/UX, and competitive programming.
+          Engineering from IIT Guwahati. I'm naturally inclined towards programming
+          and problem solving, and am always up for a challenge that enables me to think deep and come up with en efficient solution. I am passionate about writing fast, efficient and clean code.
         </div>
       </div>
       <div className="flex px-4 justify-center sm:justify-start">

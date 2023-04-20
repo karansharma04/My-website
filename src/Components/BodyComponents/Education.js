@@ -11,7 +11,7 @@ export default function Education(props) {
             </div>
             <div className="flex flex-col sm:flex-row">
                 <div className="text-color-hover px-2  text-center md:text-left">keyCoursesUndertaken:</div>
-                <div className=" text-center md:text-left">Data Structures and Algorithms, Introduction to Computing, Operating Systems, Computer Networks, Machine Learning, Deep Learning, Probability Theory and Random Processes, Softare Engineering Theory and Lab, Augmented and Virtual Reality Systems, High Performance Computing</div>
+                <div className=" text-center md:text-left">Data Structures and Algorithms, Introduction to Computing, Operating Systems, Computer Networks, Network Security and Cryptography, Computational Number Theory, Machine Learning, Deep Learning, Probability Theory and Random Processes, Softare Engineering Theory and Lab, Augmented and Virtual Reality Systems, High Performance Computing</div>
             </div>
             <div className="flex flex-col sm:flex-row">
                 <div className="text-color-hover px-2  text-center md:text-left">currentCPI:</div>
