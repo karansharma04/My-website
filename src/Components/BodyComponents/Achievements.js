@@ -3,12 +3,8 @@ import Title from "../Title";
 export default function Achievements(props) {
   const achievements = [
     {
-      title: "jeeAdvanced2019",
-      body: "Secured All India Rank of 510 among 1.6 million contesting candidates, one of the most prestigious competitive exams of India.",
-    },
-    {
-      title: "jeeMains2019",
-      body: "Secured 99.76 percentile among ~10 million contesting candidates.",
+      title: "codeforces",
+      body: "Candidate Master (Rating 1956) on Codeforces, among top 0.3% Coders in India.",
     },
     {
       title: "codeChef",
@@ -16,15 +12,11 @@ export default function Achievements(props) {
     },
     {
       title: "codeforces",
-      body: "Max rating of 1707(expert) on Codeforces.",
+      body: "Got a global ranks of 50 out of 17763 participants in Codeforces Round 892.",
     },
     {
       title: "codeChefLunchTime",
       body: "Got a global rank of 70 in CodeChef Lunchtime.",
-    },
-    {
-      title: "codeforcesDiv2",
-      body: "Got a global rank of 470 particicpating in Codeforces Div 2 round among ~30000 particicpants.",
     },
     {
       title: "googleKickstart2022",
@@ -33,6 +25,10 @@ export default function Achievements(props) {
     {
       title: "googleCodeJam2022",
       body: "Got a global rank of 381 in Round 1 of Google Code Jam 2022 among ~13000 particicpants.",
+    },
+    {
+      title: "jeeAdvanced2019",
+      body: "Secured All India Rank of 510 among 1.6 million contesting candidates, one of the most prestigious competitive exams of India.",
     },
   ];
 
