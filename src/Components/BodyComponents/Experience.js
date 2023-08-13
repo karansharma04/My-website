@@ -14,15 +14,17 @@ export default function Experience(props) {
         <div className="flex py-2 gap-2  flex-col sm:flex-row">
           <div className="text-color-hover">workDone:</div>
           <div>
-            - Working as a full-stack Engineer contributing to various features
-            in the DevRev App using Golang for backend and React TypeScript for
-            frontend.
-          </div>
-          <div>
-            - Revamped the filters framework in the Support Inbox page and its
-            e2e tests, worked on CSAT Surveys on conver- sations and Tickets,
-            and currently working on extensive Business Hours Customization for
-            SLAs on UI.
+            <div>
+              - Working as a full-stack Engineer contributing to various
+              features in the DevRev App using Golang for backend and React
+              TypeScript for frontend.
+            </div>
+            <div>
+              - Revamped the filters framework in the Support Inbox page and its
+              e2e tests, worked on CSAT Surveys on conver- sations and Tickets,
+              and currently working on extensive Business Hours Customization
+              for SLAs on UI.
+            </div>
           </div>
         </div>
         <div className="flex py-2 gap-2  flex-col sm:flex-row">
